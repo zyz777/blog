@@ -20,16 +20,16 @@
     
     
     <meta name="keywords" content="">
-    <meta name="description" content="About 页面 $T(n) = \Theta(n)$$E=mc^2$$F_a = F_b + F_c + F_{\mu}$">
+    <meta name="description" content="About 页面 $T(n) = \Theta(n)$$E=mc^2$">
 <meta property="og:type" content="website">
 <meta property="og:title" content="About 页面">
 <meta property="og:url" content="http://yoursite.com/about/index.html">
 <meta property="og:site_name" content="( •̥́ ˍ •̀ू )嘤嘤嘤~">
-<meta property="og:description" content="About 页面 $T(n) = \Theta(n)$$E=mc^2$$F_a = F_b + F_c + F_{\mu}$">
-<meta property="og:updated_time" content="2017-12-18T08:55:34.294Z">
+<meta property="og:description" content="About 页面 $T(n) = \Theta(n)$$E=mc^2$">
+<meta property="og:updated_time" content="2017-12-18T08:56:17.652Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="About 页面">
-<meta name="twitter:description" content="About 页面 $T(n) = \Theta(n)$$E=mc^2$$F_a = F_b + F_c + F_{\mu}$">
+<meta name="twitter:description" content="About 页面 $T(n) = \Theta(n)$$E=mc^2$">
     
         <link rel="alternate" type="application/atom+xml" title="( •̥́ ˍ •̀ू )嘤嘤嘤~" href="/atom.xml">
     
@@ -155,7 +155,7 @@
     <article class="page-article fade" itemprop="blogPage">
         <div class="post-content page-content" id="page-content" itemprop="pageContent">
             <h1 id="About-页面"><a href="#About-页面" class="headerlink" title="About 页面"></a>About 页面</h1><hr>
-<h2 id="T-n-Theta-n"><a href="#T-n-Theta-n" class="headerlink" title="$T(n) = \Theta(n)$"></a>$T(n) = \Theta(n)$</h2><h2 id="E-mc-2"><a href="#E-mc-2" class="headerlink" title="$E=mc^2$"></a>$E=mc^2$</h2><h2 id="F-a-F-b-F-c-F-mu"><a href="#F-a-F-b-F-c-F-mu" class="headerlink" title="$F_a = F_b + F_c + F_{\mu}$"></a>$F_a = F_b + F_c + F_{\mu}$</h2>
+<h2 id="T-n-Theta-n"><a href="#T-n-Theta-n" class="headerlink" title="$T(n) = \Theta(n)$"></a>$T(n) = \Theta(n)$</h2><h2 id="E-mc-2"><a href="#E-mc-2" class="headerlink" title="$E=mc^2$"></a>$E=mc^2$</h2>
         </div>
 
         
@@ -376,9 +376,26 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
 
 
 
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '人呢？去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
 
