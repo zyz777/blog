@@ -9,7 +9,7 @@
 
 
 
-    <meta charset="utf-8">
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
     
     
     
@@ -33,13 +33,13 @@
     <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
     <script>window.lazyScripts=[]</script>
 
-    <!-- custom head -->
+    <!-- custom head --><!-- hexo-inject:begin --><!-- hexo-inject:end -->
     
 
 </head>
 
 <body>
-    <div id="loading" class="active"></div>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="loading" class="active"></div>
 
     <aside id="menu"  >
   <div class="inner flex-row-vertical">
@@ -70,14 +70,14 @@
             <li class="waves-block waves-effect">
               <a href="/archives"  >
                 <i class="icon icon-lg icon-archives"></i>
-                Archives
+                档案/Archives
               </a>
             </li>
         
             <li class="waves-block waves-effect">
               <a href="/tags"  >
                 <i class="icon icon-lg icon-tags"></i>
-                Tags
+                标签/Tags
               </a>
             </li>
         
@@ -92,6 +92,13 @@
               <a href="/custom"  >
                 <i class="icon icon-lg icon-link"></i>
                 测试
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/about"  >
+                <i class="icon icon-lg icon-about"></i>
+                about
               </a>
             </li>
         
@@ -150,7 +157,7 @@
   class="article-card article-type-post" itemprop="blogPost">
 
     <div class="post-meta">
-        <time class="post-time" title="2017-12-15 17:21:28" datetime="2017-12-15T09:21:28.211Z"  itemprop="datePublished">2017-12-15</time>
+        <time class="post-time" title="2017-12-18 11:32:50" datetime="2017-12-18T03:32:50.457Z"  itemprop="datePublished">2017-12-18</time>
 
         
 
@@ -162,7 +169,7 @@
 
   
     <h3 class="post-title" itemprop="name">
-      <a class="post-title-link" href="/2017/12/15/example/">No title</a>
+      <a class="post-title-link" href="/2017/12/18/example/">欢迎使用 Cmd Markdown 编辑阅读器</a>
     </h3>
   
 
@@ -172,12 +179,24 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        大家好
+        欢迎使用 Cmd Markdown 编辑阅读器
+$T(n) = \Theta(n)$$E=mc^2$我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，Cmd Markdown 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。 您可以使用 Cmd Markdown：
+
+
+整理知识，学习笔记
+发布日记，杂文，所见所想
+撰写发布技术文稿（代码...
     
 
-        <a href="/2017/12/15/example/" class="post-more waves-effect waves-button">
+        <a href="/2017/12/18/example/" class="post-more waves-effect waves-button">
             Continue reading...
         </a>
+    </div>
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Cmd/">Cmd</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Markdown/">Markdown</a></li></ul>
+
     </div>
     
 </article>
@@ -351,26 +370,9 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 
 
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
 
 
-
-<script>
-(function() {
-    var OriginTitile = document.title, titleTime;
-    document.addEventListener('visibilitychange', function() {
-        if (document.hidden) {
-            document.title = '死鬼去哪里了！';
-            clearTimeout(titleTime);
-        } else {
-            document.title = '(つェ⊂)咦!又好了!';
-            titleTime = setTimeout(function() {
-                document.title = OriginTitile;
-            },2000);
-        }
-    });
-})();
-</script>
 
 
 
