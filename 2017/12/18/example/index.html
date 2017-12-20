@@ -108,7 +108,7 @@
         
             <li class="waves-block waves-effect">
               <a href="/about"  >
-                <i class="icon icon-lg icon-about"></i>
+                <i class="icon icon-lg icon-id-card-o"></i>
                 about
               </a>
             </li>
@@ -313,12 +313,10 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2017-12-18T07:44:14.092Z" itemprop="dateUpdated">2017-12-18 15:44:14</time>
+    最后更新时间/Last updated: <time datetime="2017-12-18T07:44:14.092Z" itemprop="dateUpdated">2017-12-18 15:44:14</time>
 </span><br>
 
 
-        
-        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/12/18/example/" target="_blank" rel="external">http://yoursite.com/2017/12/18/example/</a>
         
     </div>
     <footer>
@@ -556,6 +554,27 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
 <script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
 
 
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 
 
 

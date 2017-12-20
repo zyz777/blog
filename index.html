@@ -97,7 +97,7 @@
         
             <li class="waves-block waves-effect">
               <a href="/about"  >
-                <i class="icon icon-lg icon-about"></i>
+                <i class="icon icon-lg icon-id-card-o"></i>
                 about
               </a>
             </li>
@@ -189,7 +189,7 @@ $T(n) = \Theta(n)$$E=mc^2$我们理解您需要更便捷更高效的工具记录
     
 
         <a href="/2017/12/18/example/" class="post-more waves-effect waves-button">
-            Continue reading...
+            继续阅读/Continue reading...
         </a>
     </div>
     
@@ -235,7 +235,7 @@ Qu...
     
 
         <a href="/2017/12/15/hello-world/" class="post-more waves-effect waves-button">
-            Continue reading...
+            继续阅读/Continue reading...
         </a>
     </div>
     
@@ -366,6 +366,27 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 <script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
 
 
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
 
 
 
